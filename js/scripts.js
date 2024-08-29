@@ -6,7 +6,7 @@ header.innerHTML = `
                 <p class="m-0">Thiago Mauesck</p>
                 <p class="fst-italic fw-bold m-0 p-0" style="font-size: 12px;">Dev Full-Stack</p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
