@@ -1,4 +1,4 @@
-<div class="col-sm-12 col-md-6 my-2">
+<div class="col-sm-12 col-md-6 my-2"> 
                     <div class="card">
                         <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
                             full-stack
@@ -125,3 +125,5 @@
                     <i class="devicon-vuejs-plain-wordmark colored"></i>
                     <i class="devicon-react-original-wordmark colored"></i>
                     <i class="devicon-nextjs-original-wordmark colored"></i> -->
+
+                    teste
