@@ -6,8 +6,8 @@ header.innerHTML = `
                 <p class="m-0">Thiago Mauesck</p>
                 <p class="fst-italic fw-bold m-0 p-0" style="font-size: 12px;">Dev Full-Stack</p>
             </a>
-            <button class="navbar-toggler border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #47637f;">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -77,7 +77,13 @@ const skills = [
     'devicon-postgresql-plain-wordmark colored',
     'devicon-git-plain-wordmark colored',
     'devicon-github-original-wordmark colored',
-    'devicon-docker-plain-wordmark colored'
+    'devicon-docker-plain-wordmark colored',    
+   'devicon-trello-plain-wordmark colored',
+   'devicon-jira-plain-wordmark colored',
+   'devicon-redis-plain-wordmark colored',
+   'devicon-firebase-plain-wordmark colored',
+   'devicon-figma-plain colored',
+   'devicon-typescript-plain colored',
 ]
 
 let s = 0.5;  // Tempo inicial
