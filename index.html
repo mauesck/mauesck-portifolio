@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="apple-touch-icon" href="img/1.png" /> -->
+    <link rel="shortcut icon" href="img/6.png">
+    <title>Thiago Mauesck</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Honk&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="fixed-top" style="background-color: #35495E;"></header>
+
+    <section id="sobre" class="min-vh-100 align-items-center p-4 mt-5 mt-md-0" style="display: flex;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12" style="animation: fadeInTop 1s normal;">
+                    <div class="p-3 fs-3 pb-4">
+                        <!-- <hr style="animation: fadeInLeft 1s normal;"> -->
+                        <div class="fs-1" style="animation: fadeInTop 1s normal;">Olá,</div>
+                        <div style="animation: fadeInLeft 3s normal;">Seja bem-vindo(a) ao meu portfólio!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row rounded">
+                <div class="col-12 col-md-4" style="animation: fadeInLeft 2s alternate">
+                    <div class="p-3 text-md-end text-sm-center">
+                        <img src="img/perfil.png" style="width: 200px;"
+                            class="img-fluid img-thumbnail rounded-circle bg-dark">
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-xl-6 d-flex align-items-center"
+                    style="animation: fadeInRight 2s normal;">
+                    <div class="p-3 text-start position-relative">Eu me chamo Thiago, possuo formação técnica em
+                        Desenvolvimento de
+                        Sistemas, e atualmente estou cursando o Superior de Técnologia em Análise e Desenvolvimento
+                        de
+                        Sistemas (2022-Atualmente) pelo UniSenai Joinville. Apaixonado por técnologia, desde muito
+                        pequeno sempre fui
+                        imerso a tudo oque se relacionava a ela. Hoje com 24 anos continuo com minha paixão, mas
+                        agora
+                        de forma profissional, desenvolvendo aplicações Full-Stack, para diversas plataformas.
+                    </div>
+                </div>
+            </div>
+            <hr style="animation: fadeInRight 1s normal;">
+            <div class="row">
+                <div class="col-12" style="animation: fadeInTop 1s normal;">
+                    <div class="p-3 pb-4 text-end">
+                        <a href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."
+                            target="_blank" class="btn bi bi-whatsapp text-white btn-primary" role="button" block> Entre em
+                            Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="min-vh-100 align-items-center p-4"
+        style="padding: 100px 0 100px 0 !important; display: flex; display: none;">
+        <div class="container text-center d-sm-block d-lg-flex align-items-center gap-5">
+            <div class="row" style="animation: fadeInBottom 1s normal;">
+                <div class="col-12 col-md-2 fs-1 d-flex justify-content-between">Skills</div>
+            </div>
+            <div class="row d-flex align-items-center overflow-auto style-barra rounded-3 p-3" style="height: 80vh;">
+                <div class="col-12 my-2 d-flex justify-content-center flex-wrap gap-5 overflow-x-hidden" id="divSkill">
+                </div>
+            </div>
+    </section>
+
+    <section id="projetos" class="min-vh-100 align-items-center p-4"
+        style="padding: 100px 0 100px 0 !important; display: flex; display: none;">
+        <div class="container text-center d-sm-block d-lg-flex align-items-center gap-5">
+            <div class="row" style="animation: fadeInTop 1s normal;">
+                <div class="col-12 col-md-2 fs-1 d-flex justify-content-between">Projetos</div>
+            </div>
+            <div class="row d-flex align-items-center overflow-auto style-barra rounded-3 p-3"
+                style="height: 80vh; animation: fadeInRight 2s normal;">
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
+                            full-stack
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Webtools55</h5>
+                            <div class="card-text" style="height: 180px;">
+                                <div class="container">
+                                    <div class="row overflow-auto" style="height: 140px;">
+                                        <div class="col-12 p-0" id="visaoWebtools">
+                                            Neste projeto eu tive o objetivo de desenvolver uma
+                                            central de
+                                            ferramentas e utilidades que ficassem disponíveis na web para ajudar
+                                            usúarios em algumas
+                                            tarefas como: Converter uma Imagem, Sortear Números, Calcular IMC e muito
+                                            mais.
+                                        </div>
+                                        <div class="col-12 p-0" id="caracWebtools" style="display: none;">
+                                            <ul>
+                                                <li>Progressive Web App</li>
+                                                <li>Ótimo SEO</li>
+                                                <li>Páginas todas indexadas</li>
+                                                <li><a href="https://www.google.com/search?q=webtools55"
+                                                        target="_blank">Clique para ver nas pesquisas</a></li>
+                                                <img class="mt-2" src="img/webtools55.PNG" style="width: 100%;">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-title position-absolute bottom-0 mb-3">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="webtools55" id="option1"
+                                        autocomplete="off" checked>
+                                    <label class="btn-sm btn btn-outline-secondary" for="option1"
+                                        onclick="trocaTexto('caracWebtools','visaoWebtools')">Visão Geral</label>
+
+                                    <input type="radio" class="btn-check" name="webtools55" id="option2"
+                                        autocomplete="off">
+                                    <label class="btn-sm btn btn-outline-secondary" for="option2"
+                                        onclick="trocaTexto('visaoWebtools','caracWebtools')">Características</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.webtools55.com" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">WebTech</h5>
+                            <div class="card-text" style="height: 180px;">
+                                <div class="container">
+                                    <div class="row overflow-auto" style="height: 140px;">
+                                        <div class="col-12 p-0" id="visaoWebtech">
+                                            Neste pequeno projeto da faculdade fomos desafiados a criar uma página
+                                            web estática para uma escola de programação.
+                                        </div>
+                                        <div class="col-12 p-0" id="caracWebtech" style="display: none;">
+                                            <ul>
+                                                <li>HTML semântico</li>
+                                                <li>Responsividade</li>
+                                                <li>Acessibilidade</li>
+                                                <li>Boas práticas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-title position-absolute bottom-0 mb-3">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="options2" id="option3"
+                                        autocomplete="off" checked>
+                                    <label class="btn-sm btn btn-outline-secondary" for="option3"
+                                        onclick="trocaTexto('caracWebtech','visaoWebtech')">Visão Geral</label>
+
+                                    <input type="radio" class="btn-check" name="options2" id="option4"
+                                        autocomplete="off">
+                                    <label class="btn-sm btn btn-outline-secondary" for="option4"
+                                        onclick="trocaTexto('visaoWebtech','caracWebtech')">Características</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://mauesck.github.io/projeto-webtech/public/index.html" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Notepad</h5>
+                            <p class="card-text" style="height: 140px;">O objetivo deste projeto era criar
+                                um pequeno sistema o qual o usúario
+                                pudesse criar notas, pesquisar, gerência-las e imprimi-las se necessário.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://mauesck.github.io/projeto-notas/public/index.html" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">HL Climatização</h5>
+                            <p class="card-text" style="height: 140px;">Este projeto profissinal consiste em uma página
+                                institucional para
+                                apresentar os serviços e produtos da empresa HL Climatização.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.hlclimatizacao.com.br" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-bootstrap-plain colored"></i>
+                                <i class="devicon-jquery-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Joinvichat</h5>
+                            <p class="card-text" style="height: 140px;">Este projeto é um site estático que apresenta a
+                                plataforma de vendas e
+                                atendimento no WhatsApp da Joinvichat.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.joinvichat.com.br/" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-bootstrap-plain colored"></i>
+                                <i class="devicon-jquery-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
+                            full-stack
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Tarefas</h5>
+                            <div class="card-text" style="height: 140px;">
+                                <ul>
+                                    <li>Criação de tarefas com data e hora</li>
+                                    <li>CRUD das tarefas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://github.com/mauesck/projeto-tasks" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <i class="devicon-mysql-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
+                            full-stack
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Rede Social</h5>
+                            <div class="card-text">
+                                <div class="container">
+                                    <div class="row overflow-auto" style="height: 140px;">
+                                        <div class="col-12 col-md-6">
+                                            <ul class="m-0">
+                                                <li>Criação de conta</li>
+                                                <li>Compartilhamento de fotos</li>
+                                                <li>Publicações</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <ul class="m-0">
+                                                <li>Curtidas</li>
+                                                <li>Encontrar pessoas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://github.com/mauesck/projeto-photoline" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <i class="devicon-mysql-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Jogo da Velha</h5>
+                            <p class="card-text" style="height: 140px;">O projeto consiste em um jogo da velha
+                                desenvolvido em React.</p>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://github.com/mauesck/react-jogo-velha.git" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <i class="devicon-materialui-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card shadow">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
+                            full-stack
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Faturas</h5>
+                            <p class="card-text">
+                            <ul>
+                                <li>CRUD de Faturas</li>
+                                <li>Pesquisa de Faturas</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="#" target="_blank" class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-nextjs-original-wordmark colored"></i>
+                                <i class="devicon-react-original-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex flex-wrap justify-content-around align-items-center gap-3 p-4 text-white"
+        style="background-color: #35495E;">
+        <div class="text-center">
+            &copy; 2024 Thiago Mauesck - Todos os direitos reservados.
+        </div>
+        <div class="fs-2">
+            <a target="_blank" href="https://www.instagram.com/mauesk"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a target="_blank" href="https://br.linkedin.com/in/thiago-mauesck-lima"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+            <a target="_blank" href="https://github.com/mauesck"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."><ion-icon
+                    name="logo-whatsapp"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

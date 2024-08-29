@@ -1,0 +1,127 @@
+<div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-primary">
+                            full-stack
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">Webtools55</h5>
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="position-relative">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active overflow-y-auto">
+                                            Neste projeto eu tive o objetivo de desenvolver uma
+                                            central de
+                                            ferramentas e utilidades que ficassem disponíveis na web para ajudar
+                                            usúarios em algumas
+                                            tarefas como: Converter uma Imagem, Sortear Números, Calcular IMC e muito
+                                            mais.
+                                        </div>
+                                        <div class="carousel-item">
+                                            Texto 2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 text-center">                                    
+                                    <button class="btn btn-secondary btn-sm bi bi-caret-left" type="button"
+                                        data-bs-target="#carouselExample" data-bs-slide="next">
+                                        prev
+                                    </button>
+                                    <button class="btn btn-secondary  btn-sm" type="button"
+                                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        next
+                                        <i class="bi bi-caret-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://www.webtools55.com" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+/* .carousel-item {
+    height: 130px;
+} */                
+
+
+
+
+<div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <span class="position-absolute top-0 end-0 m-2 badge rounded-pill bg-danger">
+                            front-end
+                        </span>
+                        <div class="card-body text-start position-relative">
+                            <h5 class="card-title">WebTech</h5>
+                            <div class="card-text">
+                                <div class="container">
+                                    <div class="row flex-nowrap overflow-x-hidden overflow-auto" style="height: 130px;">
+                                        <div class="col-12 p-0" id="visaoWebtech">
+                                            Neste pequeno projeto da faculdade fomos desafiados a criar uma página
+                                            web estática para uma escola de programação.
+                                        </div>
+                                        <div class="col-12 p-0 d-flex" id="caracWebtech">
+                                            <ul class="w-100">
+                                                <li>HTML semântico</li>
+                                                <li>Responsividade</li>
+                                                <li>Desempenho 100</li>
+                                                <li>Acessibilidade 80</li>
+                                                <li>Acessibilidade 80</li>
+                                                <li>Acessibilidade 80</li>
+                                            </ul>
+                                            <ul class="w-100">                                                
+                                                <li>Práticas 100</li>
+                                                <li>SEO 82</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-title position-absolute bottom-0 mb-3">
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="options2" id="option3"
+                                        autocomplete="off" checked>
+                                    <label class="btn-sm btn btn-outline-secondary" for="option3"
+                                        onclick="trocaTexto('caracWebtech','visaoWebtech')">Visão Geral</label>
+
+                                    <input type="radio" class="btn-check" name="options2" id="option4"
+                                        autocomplete="off">
+                                    <label class="btn-sm btn btn-outline-secondary" for="option4"
+                                        onclick="trocaTexto('visaoWebtech','caracWebtech')">Características</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-body-secondary text-end fs-1 d-flex justify-content-between">
+                            <div>
+                                <a href="https://mauesck.github.io/projeto-webtech/public/index.html" target="_blank"
+                                    class="btn btn-dark m-1">Visualizar</a>
+                            </div>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark colored"></i>
+                                <i class="devicon-css3-plain-wordmark colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                 <!-- <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-materialui-plain colored"></i>
+                    <i class="devicon-vuetify-plain colored"></i>                    
+                    <i class="devicon-vuejs-plain-wordmark colored"></i>
+                    <i class="devicon-react-original-wordmark colored"></i>
+                    <i class="devicon-nextjs-original-wordmark colored"></i> -->

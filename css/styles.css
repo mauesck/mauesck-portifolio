@@ -1,0 +1,77 @@
+* {
+    /* border: 1px solid red; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* header */
+
+.item-menu{
+    margin: 5px;
+    border-radius: 5px;    
+}
+
+.item-menu:hover {
+    background-color: #212e3b;
+}
+
+@media(max-width:989px) {
+    .item-menu{
+        margin: 0;
+    }
+
+    .navbar-nav {
+        padding: 20px;
+    }
+
+    .nav-item {
+        padding-left: 20px;
+    }
+}
+
+.md {
+    color: white;
+}
+
+.md:hover {
+    color: #212e3b;
+}
+
+/* .card-body {
+    height: 230px !important;
+}
+
+.card-text {
+    height: 180px !important;
+}
+
+@media(max-width:1010px){
+    .card-body {
+        height: 290px !important;
+    }
+} */
+
+/* Estilizando a barra de rolagem */
+.style-barra::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor do fundo da barra de rolagem */
+.style-barra::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Cor da "polegar" da barra de rolagem */
+.style-barra::-webkit-scrollbar-thumb {
+    background: #888;
+    /* background: #35495E; */
+    /* border-radius: 6px; */
+}
+
+/* Cor da "polegar" ao passar o mouse por cima */
+.style-barra::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* background: #212e3b; */
+}
