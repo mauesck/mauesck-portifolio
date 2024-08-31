@@ -77,13 +77,13 @@ const skills = [
     'devicon-postgresql-plain-wordmark colored',
     'devicon-git-plain-wordmark colored',
     'devicon-github-original-wordmark colored',
-    'devicon-docker-plain-wordmark colored',    
-   'devicon-trello-plain-wordmark colored',
-   'devicon-jira-plain-wordmark colored',
-   'devicon-redis-plain-wordmark colored',
-   'devicon-firebase-plain-wordmark colored',
-   'devicon-figma-plain colored',
-   'devicon-typescript-plain colored',
+    'devicon-docker-plain-wordmark colored',
+    'devicon-trello-plain-wordmark colored',
+    'devicon-jira-plain-wordmark colored',
+    'devicon-redis-plain-wordmark colored',
+    'devicon-firebase-plain-wordmark colored',
+    'devicon-figma-plain colored',
+    'devicon-typescript-plain colored',
 ]
 
 let s = 0.5;  // Tempo inicial
@@ -154,3 +154,29 @@ divSkill.innerHTML = skills.map(skill => {
 //     </div>
 // </div>
 // </div>`
+
+// tempo intro
+
+function tempo(id, tempo) {
+    setTimeout(() => {
+        document.getElementById(id).style.display = 'flex';
+    }, tempo);
+}
+
+tempo('subtitle', 2500);
+tempo('introTexto', 5000);
+tempo('introContato', 25000);
+
+//1422x708
+
+function hello(id, tempo) {
+    const element = document.getElementById(id);
+    setTimeout(() => {
+        element.style.animation = 'scale 1s ease-in-out forwards';
+    }, tempo);
+    setTimeout(() => {
+        element.style.display = 'none';
+    }, tempo + 1000);
+}
+
+hello('hello', 1500);

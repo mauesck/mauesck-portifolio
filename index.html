@@ -31,25 +31,26 @@
     <section id="sobre" class="min-vh-100 align-items-center p-4 mt-5 mt-md-0" style="display: flex;">
         <div class="container text-center">
             <div class="row">
-                <!-- <div class="col-12" style="animation: fadeInTop 1s normal;"> -->
                 <div class="col-12">
                     <div class="p-3 fs-3 pb-4">
-                        <div class="fs-1" style="animation: fadeInTop 1s normal;">Olá,</div>
-                        <div style="animation: fadeInBottom 1s normal;">Seja bem-vindo(a) ao meu portfólio!</div>
+                        <div id="hello" class="fs-1" style="animation: fadeInTop 1s normal;">Hello World!</div>
+                        <div id="subtitle" style="animation: fadeInBottom 1s normal; display: none;">Seja bem-vindo(a)
+                            ao meu portfólio!</div>
                     </div>
                 </div>
             </div>
-            <div class="row rounded">
-                <div class="col-12 col-md-4" style="animation: fadeInLeft 1s normal">
+            <div id="introTexto" class="row rounded" style="display: none;">
+                <div class="col-12 col-md-4" style="animation: fadeInBottom 1s normal">
                     <div class="p-3 text-md-end text-sm-center">
                         <img src="img/perfil.png" style="width: 200px;"
                             class="img-fluid img-thumbnail rounded-circle bg-dark">
                     </div>
                 </div>
                 <div class="col-12 col-md-8 col-xl-6 d-flex align-items-center"
-                    style="animation: fadeInRight 1s normal;">
+                    style="animation: fadeInBottom 1.5s normal;">
                     <div class="p-3 text-start position-relative">
-                        Eu me chamo Thiago, possuo formação técnica em Desenvolvimento de Sistemas e atualmente estou
+                        Muito prazer eu me chamo Thiago, possuo formação técnica em Desenvolvimento de Sistemas e
+                        atualmente estou
                         cursando o Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (2022-Atualmente)
                         pelo UniSenai Joinville. Apaixonado por tecnologia, desde muito pequeno sempre fui imerso a tudo
                         oque se relacionava a ela. Hoje aos 24 anos continuo com minha paixão, mas agora de forma
@@ -57,9 +58,8 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-12" style="animation: fadeInTop 1s normal;">
+            <div id="introContato" class="row" style="display: none;">
+                <div class="col-12" style="animation: fadeInBottom 1s normal;">
                     <div class="p-3 pb-4 text-end">
                         <a href="https://api.whatsapp.com/send?phone=5547992212596&text=Ol%C3%A1,%20vi%20seu%20portf%C3%B3lio,%20gostaria%20de%20contratar%20seu%20servi%C3%A7o."
                             target="_blank" class="btn bi bi-whatsapp text-white btn-primary" role="button" block> Entre

@@ -79,3 +79,27 @@
         transform: translateY(0);
     }
 }
+
+@keyframes spinAndScale {
+    0% {
+        transform: rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(360deg) scale(10);
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(360deg) scale(10);
+        opacity: 0;
+    }
+}
