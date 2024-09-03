@@ -84,6 +84,8 @@ const skills = [
     'devicon-firebase-plain-wordmark colored',
     'devicon-figma-plain colored',
     'devicon-typescript-plain colored',
+    'devicon-csharp-plain-wordmark colored',
+    'devicon-dot-net-plain-wordmark colored',
 ]
 
 let s = 0.5;  // Tempo inicial
